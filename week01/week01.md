@@ -21,8 +21,18 @@
     1.setA("1") 이런식으로 값을 지정하거나
     2.setA((prev) => !prev) 이런식으로 함수를 지정해서 사용하기도 한다.
   state 값이 변경되면 해당 컴포넌트는 자동으로 리렌더링되므로, 동적인 UI 구현에 핵심적인 역할을 한다
-
-
+  set(변수명)의 활용도는 생각보다 엄청 다양하다.
+  
+  `const [formData, setFormData] = useState({
+    name : "",
+    email : "",
+    password : "",
+    confirmPassword : "",
+    height : "",
+    weight : ""
+  })`
+  이런식으로도 가능!
+  
 ### 설치하는 방법
 
 1. `npm create vite@latest my-app -- --template react`  
